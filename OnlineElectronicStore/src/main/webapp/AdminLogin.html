@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Login</title>
+<style>
+body{
+			margin:0;
+			padding:1;
+			height:100vh;
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSuQ_NAUtOZRLN-hi9AP0_828Cio0ipdEAA&s');
+			background-size:cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center; 
+			background-attachment: fixed;
+}
+.container {
+            text-align: center;
+            margin-top: 100px;
+            background-color:black;
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid red;
+            box-shadow: purple;
+}
+h1 {
+            font-size: 30px;
+            color:gray;
+            margin-bottom: 30px;
+}
+        input {
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }     
+</style>	
+	
+</head>
+<body>
+	<div class="container" >
+		<h1><u>ADMIN LOGIN</u></h1><br><br>
+		<form action="alog" method="post"  onsubmit="return validateLogin(this);">
+			UserName: <input type="text" name="aname"><br><br>
+			Password: <input type="password" name="apwd"><br><br>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>

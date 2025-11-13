@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+			margin:0;
+			padding:1;
+			height:100vh;
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSuQ_NAUtOZRLN-hi9AP0_828Cio0ipdEAA&s');
+			background-size:cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center; 
+			background-attachment: fixed;
+}
+.container {
+            text-align: center;
+            margin-top: 80px;
+            background-color:teal;
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid red;
+            box-shadow: purple;
+}
+h1 {
+            font-size: 30px;
+            color:gray;
+            margin-bottom: 30px;
+}
+        input {
+            margin: 2px 0;
+            padding: 5px;
+            width: 40%;
+            box-sizing:content-box;
+        }
+        input[type="submit"] {
+            background: green;
+            color: black;
+            border: black;
+            cursor: pointer;
+        }     
+</style>
+</head>
+<body>
+<div class="container">
+<h1> <i>Welcome to Registration Portal</i><br><br>
+		<form action="reg" method="post">
+			UserName: <input type="text" name="cname"><br><br>
+			Password: <input type="password" name="cpwd"><br><br>
+			FirstName: <input type="text" name="fname"><br><br>
+			LastName: <input type="text" name="lname"><br><br>
+			Address: <input type="text" name="cadd"><br><br>
+			Mail_id: <input type="email" name="mid"><br><br>
+			Mobile: <input type="number" name="cphn"><br><br>
+			<input type="submit" value="Register"><br><br>
+		</form>	
+</h1>
+</div>		
+</body>
+</html>
